@@ -1,6 +1,22 @@
 <?php
 
-class CAHNRS_PDF_Page {
+require_once 'classes/class-pdf-generator-pdf.php';
+
+require_once 'classes/class-pdf-generator-options.php';
+
+require_once  'lib/dompdf/dompdf_config.inc.php';
+
+global $post;
+
+$options = new PDF_Generator_Options();
+
+$dompdf = new dompdf();
+
+$pdf = new PDF_Generator_PDF( $options );
+
+$pdf->the_pdf( $post , $options , $dompdf );
+
+/*class CAHNRS_PDF_Page {
 
 	public function __construct(){
 		
@@ -18,7 +34,7 @@ class CAHNRS_PDF_Page {
 
 		global $post;
 
-		$pdf->set_template( get_post_meta( $post->ID , '_pdf_template' , true ) );
+		$pdf->set_template( $post->ID );
 
 		$pdf->the_pdf();
 		
@@ -27,4 +43,4 @@ class CAHNRS_PDF_Page {
 
 }
 
-$cahnrs_pdf_page = new CAHNRS_PDF_Page();
+$cahnrs_pdf_page = new CAHNRS_PDF_Page();*/

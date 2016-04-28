@@ -1,7 +1,8 @@
 body {
-	font-size: 13px;
+	font-size: 14px;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	color: #333;
+	color: #555;
+	line-height: 18px;
 }
 
 h1,h2,h3,h4,h5 {
@@ -55,6 +56,10 @@ a {
 	vertical-align: top;
 }
 
+.row {
+	width: 725px;
+}
+
 .row.single .column {
 	display: block;
 	vertical-align: top;
@@ -64,6 +69,25 @@ a {
 .row.side-right .column.two { width:32.33%; margin-left: 1%;}
 .row.side-right.right-25 .column.one { width:74%; margin-right: 1%;}
 .row.side-right.right-25 .column.two { width:24%; margin-left: 1%;}
+
+.row.halves .column.one { width:48%; margin-right: 2%; }
+.row.halves .column.two { width:48%; margin-left: 2%;}
+
+.cpb-pagebreak {page-break-after: always; }
+
+
+.cpb-figure {
+	box-sizing:border-box;
+	padding: 0.5rem;
+	border:1px solid #ddd;
+	background:#fff;
+	margin-bottom: 1rem;
+}
+		
+.cpb-figure figcaption {
+	padding: 0.25rem 0 0.5rem;
+	font-size:0.8rem;
+}
 
 /* CSS HOOKS */
 .small-text {
