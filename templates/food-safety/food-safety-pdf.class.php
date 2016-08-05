@@ -1,6 +1,6 @@
 <?php
 
-class Food_Safety_PDF extends PDF_Template {
+class Food_Safety_PDF extends Core_Web_Template {
 	
 	
 	public function get_pdf_html(){ 

@@ -18,25 +18,13 @@ class PDF_Generator_PDF {
 		
 		$root = dirname( dirname(__FILE__) );
 		
-		require_once $root . '/templates/class-pdf-template.php';
+		//require_once $root . '/templates/class-pdf-template.php';
 		
-		$template = $this->get_template_type( $post_id );
+		$template_type = $this->get_template_type( $post_id );
 		
-		switch( $template ){
-			
-			case 'animal-ag':
-				require_once $root . '/templates/animal-ag/class-animal-ag-pdf.php'; 
-				$this->template = new Animal_Ag_PDF();
-				break;
-				
-			case 'food-safety':
-			default:
-				require_once $root . '/templates/food-safety/food-safety-pdf.class.php';
-				$this->template = new Food_Safety_PDF();
-				break;
-			
-		} // end switch
+		$template = apply_filters( 'pdf_generator_template_path' , false , $template_type , $post_id );
 		
+		$this->template = $template;		
 		
 	} // end set_template
 	
@@ -48,6 +36,8 @@ class PDF_Generator_PDF {
 			$this->set_template();
 			
 		} // end if
+		
+		$this->template->set_web_template( 'post' , $post );
 		
 		$this->template->render_pdf( $post , $options , $dompdf );
 		

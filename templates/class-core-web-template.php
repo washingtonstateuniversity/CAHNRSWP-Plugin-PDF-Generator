@@ -1,6 +1,6 @@
 <?php
 
-abstract class PDF_Template {
+abstract class Core_Web_Template {
 	
 	protected $html;
 	
@@ -56,7 +56,7 @@ abstract class PDF_Template {
 			
 		} // end foreach
 		
-		var_dump( $this->settings );
+		//var_dump( $this->settings );
 		
 	} // end set_settings
 	
@@ -142,7 +142,6 @@ abstract class PDF_Template {
 	}
 	
 	public function render_pdf( $post , $options , $dompdf ){
-		
 		
 		$dompdf->load_html( $this->get_pdf_document( $post , $options ) );
 	

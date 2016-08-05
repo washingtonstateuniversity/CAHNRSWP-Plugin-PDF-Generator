@@ -1,6 +1,6 @@
 <?php
 
-class Animal_Ag_PDF extends PDF_Template {
+class Animal_Ag_PDF extends Core_Web_Template {
 	
 	protected $fields = array(
 		'_fs_number' => array('', 'text'),

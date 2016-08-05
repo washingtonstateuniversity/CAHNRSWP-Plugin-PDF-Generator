@@ -133,6 +133,8 @@ abstract class PDF_Template {
 	
 	public function render_pdf( $post , $options , $dompdf ){
 		
+		define( 'DOINGPDF' , true );
+		
 		$dompdf->load_html( $this->get_pdf_document( $post , $options ) );
 	
 		$dompdf->render();
