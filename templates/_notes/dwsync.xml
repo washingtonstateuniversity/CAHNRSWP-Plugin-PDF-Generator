@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="style.css" server="ftp.wpdev.cahnrs.wsu.edu//public_html/devsite.wpdev.cahnrs.wsu.edu/wp-content/plugins/CAHNRS-Plugin-PDF-Generator/" local="131063454464410428" remote="131066821200000000" Dst="2" />
-<file name="class-pdf-template.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/devsite.wpdev.cahnrs.wsu.edu/wp-content/plugins/CAHNRS-Plugin-PDF-Generator/" local="131063420612755794" remote="131066821200000000" Dst="2" />
-<file name="class-core-web-template.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/devsite.wpdev.cahnrs.wsu.edu/wp-content/plugins/CAHNRS-Plugin-PDF-Generator/" local="131066824977277558" remote="131066824800000000" Dst="2" />
+<file name="pdf.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/devsite.wpdev.cahnrs.wsu.edu/wp-content/plugins/CAHNRS-Plugin-PDF-Generator/" local="131149137778833069" remote="131149137600000000" Dst="2" />
+<file name="pdf-render.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/devsite.wpdev.cahnrs.wsu.edu/wp-content/plugins/CAHNRS-Plugin-PDF-Generator/" local="131149151797793492" remote="131149151400000000" Dst="2" />
 </dwsync>
