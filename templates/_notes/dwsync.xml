@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="pdf.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/devsite.wpdev.cahnrs.wsu.edu/wp-content/plugins/CAHNRS-Plugin-PDF-Generator/" local="131149137778833069" remote="131149137600000000" Dst="2" />
-<file name="pdf-render.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/devsite.wpdev.cahnrs.wsu.edu/wp-content/plugins/CAHNRS-Plugin-PDF-Generator/" local="131149151797793492" remote="131149151400000000" Dst="2" />
+<file name="pdf.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/devsite.wpdev.cahnrs.wsu.edu/wp-content/plugins/CAHNRS-Plugin-PDF-Generator/" local="131151531697284370" remote="131151531600000000" Dst="2" />
+<file name="pdf-render.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/devsite.wpdev.cahnrs.wsu.edu/wp-content/plugins/CAHNRS-Plugin-PDF-Generator/" local="131151439880077665" remote="131151439800000000" Dst="2" />
+<file name="pdf-save.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/devsite.wpdev.cahnrs.wsu.edu/wp-content/plugins/CAHNRS-Plugin-PDF-Generator/" local="131151456577720563" remote="131151456000000000" Dst="2" />
+<file name="pdf-public.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/devsite.wpdev.cahnrs.wsu.edu/wp-content/plugins/CAHNRS-Plugin-PDF-Generator/" local="131151578785864957" remote="131151578400000000" Dst="2" />
 </dwsync>

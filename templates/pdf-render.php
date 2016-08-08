@@ -8,6 +8,7 @@ $memcache_obj->flush();
 $pdf = new CAHNRS_PDF();
 
 $post_id = sanitize_text_field( $_GET['pdf-id'] );
+
 $post = get_post( $post_id );
 
 ;?>
