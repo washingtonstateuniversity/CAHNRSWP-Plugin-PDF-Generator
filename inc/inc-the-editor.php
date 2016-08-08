@@ -12,6 +12,6 @@
             </div>
         </fieldset> 
         <div class="cwp-share-link">
-    	<strong>PDF Share Link: <a href="<?php echo $post_link;?>?pdf=preview" target="_blank"><?php echo $post_link;?>?pdf=true</a></strong>
+    	<strong>(Public) PDF Share Link: <a href="<?php echo $post_link;?>?pdf=true" target="_blank"><?php echo $post_link;?>?pdf=true</a></strong>
     </div>  
 </div>

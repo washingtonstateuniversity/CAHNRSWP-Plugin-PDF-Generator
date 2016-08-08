@@ -147,7 +147,7 @@ class CAHNRS_PDF {
 	
 	public function the_editor( $post ){
 		
-		$pdf_url = get_post_meta( $post->ID , $this->meta_key , true );
+		$pdf_url = apply_filters( 'cahnrswp_pdf_public_url' , get_post_meta( $post->ID , $this->meta_key , true ) , $post );
 	
 		$post_link = get_post_permalink( $post->ID );
 		
@@ -187,7 +187,7 @@ class CAHNRS_PDF {
 		 
 		 if ( ! empty( $_POST[ $this->meta_key ] ) && $this->check_save_permissions( $post_id ) ){
 			 
-			 update_post_meta( $post_id , $this->meta_key );
+			 update_post_meta( $post_id , $this->meta_key , sanitize_text_field( $_POST[ $this->meta_key ] ) );
 			 
 		 } // end if
 		 

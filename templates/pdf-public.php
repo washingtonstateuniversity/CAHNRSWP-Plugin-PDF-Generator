@@ -6,7 +6,7 @@ global $post;
 
 $pdf_url = get_post_meta( $post->ID , $pdf->meta_key , true );
 
-apply_filters( 'cahnrswp_pdf_public' , $pdf_url , $post );
+$pdf_url = apply_filters( 'cahnrswp_pdf_public_url' , $pdf_url , $post );
 
 if ( $pdf_url ){
 	

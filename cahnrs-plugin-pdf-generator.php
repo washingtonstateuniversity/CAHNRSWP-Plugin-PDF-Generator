@@ -6,13 +6,13 @@ Plugin URI: http://cahnrs.wsu.edu/communications
 Description: Auto Generates PDF's
 Author: cahnrscommunications, Danial Bleile
 Author URI: http://cahnrs.wsu.edu/communications
-Version: 2.0.1
+Version: 2.0.2
 */
 class CAHNRS_PDF_Generator {
 	
 	private static $instance;
 	
-	public static $version = '2.0.1';
+	public static $version = '2.0.2';
 	
 	public static function get_instance(){
 		
