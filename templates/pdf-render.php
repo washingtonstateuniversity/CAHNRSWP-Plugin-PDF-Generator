@@ -1,9 +1,13 @@
 <?php
 
-$memcache_obj = new Memcache;
-$memcache_obj->connect('localhost', 11211);
+if ( class_exists( 'Memcache' ) ){
 
-$memcache_obj->flush();
+	$memcache_obj = new Memcache;
+	$memcache_obj->connect('localhost', 11211);
+
+	$memcache_obj->flush();
+
+} // end if 
 
 $pdf = new CAHNRS_PDF();
 
